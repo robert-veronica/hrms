@@ -1,0 +1,43 @@
+2026-01-04 16:34:27,962 DEBUG cd frappe-bench && uv venv env --seed --python python3
+2026-01-04 16:34:31,084 LOG Getting frappe
+2026-01-04 16:34:31,085 DEBUG cd frappe-bench/apps && git clone https://github.com/frappe/frappe.git --branch version-15 --depth 1 --origin upstream
+2026-01-04 16:34:43,111 LOG Installing frappe
+2026-01-04 16:34:43,119 DEBUG cd /Users/sarashaikh/Desktop/LocalRepos/hrms/frappe-bench && uv pip install --quiet --upgrade -e /Users/sarashaikh/Desktop/LocalRepos/hrms/frappe-bench/apps/frappe  --python /Users/sarashaikh/Desktop/LocalRepos/hrms/frappe-bench/env/bin/python
+2026-01-04 16:35:44,188 DEBUG cd /Users/sarashaikh/Desktop/LocalRepos/hrms/frappe-bench/apps/frappe && yarn install --check-files
+2026-01-04 16:37:22,738 DEBUG cd frappe-bench && bench build
+2026-01-04 16:37:23,017 INFO /Users/sarashaikh/anaconda3/bin/bench build
+2026-01-04 16:38:13,619 LOG setting up backups
+2026-01-04 16:38:18,050 LOG backups were set up
+2026-01-04 16:38:18,052 INFO Bench frappe-bench initialized
+2026-01-04 16:44:10,214 INFO /Users/sarashaikh/anaconda3/bin/bench get-app erpnext --branch version-15
+2026-01-04 16:44:10,722 LOG Getting erpnext
+2026-01-04 16:44:10,723 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git --branch version-15 --depth 1 --origin upstream
+2026-01-04 16:44:24,384 LOG Installing erpnext
+2026-01-04 16:44:24,387 DEBUG cd /Users/sarashaikh/Desktop/LocalRepos/hrms/frappe-bench && uv pip install --quiet --upgrade -e /Users/sarashaikh/Desktop/LocalRepos/hrms/frappe-bench/apps/erpnext  --python /Users/sarashaikh/Desktop/LocalRepos/hrms/frappe-bench/env/bin/python
+2026-01-04 16:44:46,443 DEBUG cd /Users/sarashaikh/Desktop/LocalRepos/hrms/frappe-bench/apps/erpnext && yarn install --check-files
+2026-01-04 16:44:48,444 DEBUG bench build --app erpnext
+2026-01-04 16:44:48,939 INFO /Users/sarashaikh/anaconda3/bin/bench build --app erpnext
+2026-01-04 16:45:15,299 INFO /Users/sarashaikh/anaconda3/bin/bench get-app hrms --branch version-15
+2026-01-04 16:45:15,878 LOG Getting hrms
+2026-01-04 16:45:15,878 DEBUG cd ./apps && git clone https://github.com/frappe/hrms.git --branch version-15 --depth 1 --origin upstream
+2026-01-04 16:45:19,182 LOG Installing hrms
+2026-01-04 16:45:19,183 DEBUG cd /Users/sarashaikh/Desktop/LocalRepos/hrms/frappe-bench && uv pip install --quiet --upgrade -e /Users/sarashaikh/Desktop/LocalRepos/hrms/frappe-bench/apps/hrms  --python /Users/sarashaikh/Desktop/LocalRepos/hrms/frappe-bench/env/bin/python
+2026-01-04 16:45:20,698 DEBUG cd /Users/sarashaikh/Desktop/LocalRepos/hrms/frappe-bench/apps/hrms && yarn install --check-files
+2026-01-04 16:47:49,820 DEBUG bench build --app hrms
+2026-01-04 16:47:50,268 INFO /Users/sarashaikh/anaconda3/bin/bench build --app hrms
+2026-01-04 16:59:49,532 INFO /Users/sarashaikh/anaconda3/bin/bench new-site hrms.local
+2026-01-04 17:02:47,047 INFO /Users/sarashaikh/anaconda3/bin/bench get-app https://github.com/robert-veronica/hrms.git
+2026-01-04 17:03:09,027 WARNING /Users/sarashaikh/anaconda3/bin/bench get-app https://github.com/robert-veronica/hrms.git executed with exit code 1
+2026-01-04 17:20:23,210 INFO /Users/sarashaikh/anaconda3/bin/bench new-site hrms.local
+2026-01-04 17:20:32,732 INFO /Users/sarashaikh/anaconda3/bin/bench --site hrms.local install-app erpnext
+2026-01-04 17:20:34,581 INFO /Users/sarashaikh/anaconda3/bin/bench --site hrms.local install-app hrms
+2026-01-04 17:38:28,917 INFO /Users/sarashaikh/anaconda3/bin/bench drop-site hrms.local
+2026-01-04 17:38:30,475 INFO /Users/sarashaikh/anaconda3/bin/bench new-site hrms.local
+2026-01-04 17:46:09,045 INFO /Users/sarashaikh/anaconda3/bin/bench drop-site hrms.local --force
+2026-01-04 17:46:45,481 INFO /Users/sarashaikh/anaconda3/bin/bench drop-site hrms.local --force
+2026-01-04 18:00:04,070 INFO /Users/sarashaikh/anaconda3/bin/bench --verbose --site all backup
+2026-01-04 19:14:40,483 INFO /Users/sarashaikh/anaconda3/bin/bench new-site hrms.local --db-name hrms --db-root-username root --db-root-password 123 --admin-password admin123 --mariadb-host 127.0.0.1 --mariadb-port 3306
+2026-01-04 19:41:16,233 INFO /Users/sarashaikh/anaconda3/bin/bench new-site hrms.local --db-name hrms --db-root-username root --db-root-password 123 --admin-password admin123 --db-host 127.0.0.1 --db-port 3306
+2026-01-04 19:47:13,211 INFO /Users/sarashaikh/anaconda3/bin/bench new-site hrms.local --db-name hrms --db-root-username root --db-root-password 123 --admin-password admin123 --db-host 127.0.0.1 --db-port 3306
+2026-01-05 00:00:01,752 INFO /Users/sarashaikh/anaconda3/bin/bench --verbose --site all backup
+2026-01-05 12:00:01,743 INFO /Users/sarashaikh/anaconda3/bin/bench --verbose --site all backup
